@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>우테코 - 접근성 미션</title>
+  <script defer src="main.854dde5a1305f742293d.js"></script></head>
+  <body>
+    <section class="spin-input-section" aria-labelledby="spin-input-title">
+      <h1 id="spin-input-title">승객 선택</h1>
+      <fieldset class="spin-input" aria-label="성인 승객 수 입력란">
+        <legend class="label-container">
+          <p for="spin-value" id="spin-label">성인</p>
+          <button class="default-button-container tip-button">
+            <div
+              class="round-button-icon tip-button-icon"
+              aria-label="도움말 보기"
+            >
+              ?
+            </div>
+          </button>
+        </legend>
+        <div class="input-area">
+          <button
+            class="spin-button decrement default-button-container"
+            aria-label="성인 탑승자 한명 줄이기"
+          >
+            <div class="round-button-icon">–</div>
+          </button>
+          <input
+            type="number"
+            class="spin-button-value-input"
+            name="spin-value"
+            value="1"
+            aria-labelledby="spin-label"
+            min="1"
+            max="3"
+          />
+          <button
+            class="spin-button increment default-button-container"
+            aria-label="성인 탑승자 한명 늘리기"
+          >
+            <div class="round-button-icon">+</div>
+          </button>
+        </div>
+        <p role="status" id="spin-input-status"></p>
+      </fieldset>
+    </section>
+  </body>
+</html>
