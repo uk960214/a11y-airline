@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>항공권 예약하기 | 승객 수 선택</title>
-  <script defer src="main.7b80bab9e0148475fdc2.js"></script></head>
+  <script defer src="main.53cb7a1b17ea4fc705f8.js"></script></head>
   <body>
     <section class="spin-input-section" aria-labelledby="spin-input-title">
       <h1 id="spin-input-title">승객 선택</h1>
-      <article class="spin-input" aria-labelledby="spin-label">
+      <form class="spin-input-form" aria-labelledby="spin-label">
         <div class="label-container">
           <label for="spin-input-value" id="spin-label">성인</label>
           <button
@@ -21,7 +21,7 @@
             >
           </button>
         </div>
-        <form class="input-container">
+        <div class="input-container">
           <button
             class="spin-button decrement default-button-container"
             aria-label="성인 탑승자 한명 줄이기"
@@ -44,9 +44,9 @@
           >
             <span class="round-button-icon" aria-hidden="true">+</span>
           </button>
-        </form>
+        </div>
         <p role="status" id="spin-input-status" aria-live="polite"></p>
-      </article>
+      </form>
     </section>
   </body>
 </html>
